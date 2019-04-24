@@ -1,0 +1,23 @@
+{
+  "name": "javascript-bundle",
+  "version": "1.0.0",
+  "description": "Bundle of different bits of JavaScript code",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel *.js --out-dir dist",
+    "test": "npm run build && mocha dist/*.test.js"
+  },
+  "author": "Tomi Kaistila",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-core": "^6.26.3",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "rimraf": "^2.6.3"
+  }
+}
